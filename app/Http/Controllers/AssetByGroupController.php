@@ -82,6 +82,7 @@ class AssetByGroupController extends Controller
         $data['location'] = $location;
         $data['group'] = $group;
         $data['codeLabel'] = ( $group == 'commercial' ? 'Account ID' : 'Code' );
+        $data['locationLabel'] = ( $group == 'ict' ? 'Class' : 'Location / Class' );
         $data['assetFormUrl'] = url('/asset/asset-type-form/');
 
         return view('grouped-assets.add', $data);

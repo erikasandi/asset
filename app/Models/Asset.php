@@ -33,6 +33,11 @@ class Asset extends Model
         return $this->hasOne(CommercialDetail::class);
     }
 
+    public function ict()
+    {
+        return $this->hasOne(IctDetail::class);
+    }
+
     public function bills()
     {
         return $this->hasMany(AssetBill::class);

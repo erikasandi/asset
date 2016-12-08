@@ -2,7 +2,7 @@
     <div class="asset-type-2">
         <div class="col-md-6">
             <div class="form-group ">
-                <label>Specification</label>
+                <label>Brand</label>
                 <textarea class="form-control" name="specification"></textarea>
             </div>
             <div class="form-group ">

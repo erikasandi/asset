@@ -81,6 +81,7 @@
                                 <thead>
                                 <tr>
                                     <th>Id</th>
+                                    <th>Code</th>
                                     <th>Asset Name</th>
                                     <th>Type</th>
                                     <th>Location</th>
@@ -123,6 +124,7 @@
                 columns: [
                     { data: 'id', name: 'id' },
                     { data: 'name', name: 'name' },
+                    { data: 'code', name: 'code' },
                     { data: 'type', name: 'type' },
                     { data: 'location', name: 'location' },
                     { data: 'action', name: 'action', orderable: false, searchable: false, "width": "280px" }

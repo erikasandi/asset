@@ -62,7 +62,7 @@
                                         <div class="col-md-6">
                                             <div class="col-md-12">
                                                 <div class="form-group  @if ($errors->has('location_id')) has-error @endif">
-                                                    <label>Asset Location / Class</label>
+                                                    <label>{!! $locationLabel !!}</label>
                                                     {!! $locationSelect !!}
                                                     @if ($errors->has('location_id'))
                                                         <span class="help-block">{!! $errors->first('location_id') !!}</span>

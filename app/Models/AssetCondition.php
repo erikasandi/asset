@@ -15,4 +15,9 @@ class AssetCondition extends Model
     {
         return $this->hasMany(AssetDetail::class);
     }
+
+    public function ictAssets()
+    {
+        return $this->hasMany(IctDetail::class);
+    }
 }

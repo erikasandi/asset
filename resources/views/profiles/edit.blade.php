@@ -34,7 +34,7 @@
                         <div class="portlet light profile-sidebar-portlet ">
                             <!-- SIDEBAR USERPIC -->
                             <div class="profile-userpic">
-                                <img src="{!! asset('uploads/avatars/' . $user->userDetail->avatar) !!}" class="img-responsive" alt=""> </div>
+                                <img src="@if(isset($user->userDetail->avatar)){!! asset('uploads/avatars/' . $user->userDetail->avatar) !!}@else{!! asset('images/avatar.jpg') !!}@endif" class="img-responsive" alt=""> </div>
                             <!-- END SIDEBAR USERPIC -->
                             <!-- SIDEBAR USER TITLE -->
                             <div class="profile-usertitle">
@@ -104,7 +104,7 @@
                                                         <input type="text" name="name" class="form-control" value="{!! $user->name !!}" /> </div>
                                                     <div class="form-group">
                                                         <label class="control-label">Mobile Number</label>
-                                                        <input type="text" name="mobile_phone" class="form-control" value="{!! $user->userDetail->mobile_phone !!}" /> </div>
+                                                        <input type="text" name="mobile_phone" class="form-control" value="@if(isset($user->userDetail->mobile_phone)){!! $user->userDetail->mobile_phone !!}@endif" /> </div>
                                                     <div class="margiv-top-10">
                                                         <button type="submit" class="btn green"> Save Changes </button>
                                                         <a href="{!! url('user-profile/' . $user->id) !!}" class="btn default"> Cancel </a>
